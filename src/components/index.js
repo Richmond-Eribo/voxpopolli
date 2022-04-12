@@ -1,0 +1,6 @@
+export {default as Header} from './Header.jsx'
+export {default as Nav} from './Nav.jsx'
+export {default as Card} from './Card'
+export {default as VerticalCarousel} from './VerticalCarousel'
+export {default as Footer} from './Footer'
+export {default as ProfileCard} from './ProfileCard'
