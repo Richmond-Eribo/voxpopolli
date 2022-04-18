@@ -1,19 +1,23 @@
+import List from '../assets/list.svg'
+import Opinion from '../assets/opinion.svg'
+import Fact from '../assets/fact.svg'
+
 export const Benefits = [
   {
     title: 'Fact Metrics',
-    imageUrl: '',
+    imageUrl: Fact,
     description:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totam ex.',
   },
   {
     title: 'Subjective Opinion',
-    imageUrl: '',
+    imageUrl: Opinion,
     description:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totam ex.',
   },
   {
     title: '10 Must Know',
-    imageUrl: '',
+    imageUrl: List,
     description:
       ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totam ex.',
   },
@@ -49,57 +53,6 @@ export const RecentPosts = [
 export const Navlinks = [
   {name: 'Home', link: '/'},
   {name: 'Blog', link: '/Blog'},
-  {name: 'Aspirants', link: '/Aspirants'},
+  {name: 'Candidates', link: '/Candidates'},
   {name: 'Elections', link: '/Elections'},
-]
-
-export const Aspirants2023 = [
-  {
-    name: 'PETER OBI',
-    imageUrl: '',
-    description:
-      'orem ipsum doacere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-    Profile:
-      'orem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-  },
-  {
-    name: ' NYESOM WIKE EZENWO',
-    imageUrl: '',
-    description:
-      'orem ipsum doacere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-    Profile:
-      'orem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-  },
-  {
-    name: 'OLUBUKOLA ABUBAKAR SARAKI',
-    imageUrl: '',
-    description:
-      'orem ipsum doacere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-    Profile:
-      'orem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-  },
-  {
-    name: 'BOLA AHMED TINUBU',
-    imageUrl: '',
-    description:
-      'orem ipsum doacere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-    Profile:
-      'orem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-  },
-  {
-    name: 'tah tah tah',
-    imageUrl: '',
-    description:
-      'orem ipsum doacere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-    Profile:
-      'orem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-  },
-  {
-    name: 'tah tah tah',
-    imageUrl: '',
-    description:
-      'orem ipsum doacere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-    Profile:
-      'orem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum totorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis. Ipsum iste praesentium, tenetur optio vero facere explicabo ullam nobis minima, quibusdam quisquam hic ipsam, at quis rerum tot',
-  },
 ]

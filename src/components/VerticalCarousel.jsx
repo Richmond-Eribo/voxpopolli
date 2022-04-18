@@ -6,7 +6,7 @@ const VerticalCarousel = () => {
       <span className='indicator-item border-none  badge bg-muted py-3  text-white  -translate-x-5'>
         scroll
       </span>
-      <div className='md:h-[400px]   md:w-[500px] w-96 h-96  carousel carousel-vertical rounded-box'>
+      <div className='md:h-[400px]   md:w-[500px] w-[330px] h-[330px]  carousel carousel-vertical rounded-box'>
         <div id='item1' className='carousel-item h-full w-full'>
           <img
             alt='img'

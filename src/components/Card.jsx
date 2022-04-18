@@ -1,13 +1,18 @@
 import React from 'react'
 
 const Card = props => {
-  const {title, description, category} = props
+  const {title, description, category, imageUrl} = props
   return (
-    <div className='card mb-4 card-compact w-96 bg-primary-light/20 shadow-xl'>
+    <div className='card mb-4 card-compact w-[350px] bg-primary-light/20 shadow-xl'>
       <figure>
         <img
-          src='https://api.lorem.space/image/shoes?w=400&h=225'
+          src={
+            imageUrl
+              ? imageUrl
+              : 'https://api.lorem.space/image/shoes?w=400&h=225'
+          }
           alt='Shoes'
+          className={`${imageUrl && 'w-48 h-56'}`}
         />
       </figure>
       <div className='card-body'>
@@ -21,7 +26,7 @@ const Card = props => {
         </h2>
         <p className='text-base'>{description}</p>
         {props.category && (
-          <div className='card-actions justify-end '>
+          <div className='justify-end card-actions '>
             <div className='badge badge-outline'>{category} </div>
           </div>
         )}

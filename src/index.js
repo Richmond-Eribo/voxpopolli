@@ -1,4 +1,6 @@
+// Writting this to info you that this code will need refactoring after I am done. because, WHAT IS THIS?
 import React from 'react'
+
 import ReactDOM from 'react-dom'
 import App from './App'
 import reportWebVitals from './reportWebVitals'

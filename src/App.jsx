@@ -1,9 +1,9 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
-import Aspirants from './pages/Aspirants'
 import Blog from './pages/Blog'
 import Elections from './pages/Elections'
-import Aspirant from './pages/Aspirant'
+import Candidates from './pages/Candidates'
+import Candidate from './pages/Candidate'
 
 function App() {
   return (
@@ -11,9 +11,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
 
-        <Route path='/Aspirants' element={<Aspirants />} />
+        <Route path='/Candidates' element={<Candidates />} />
 
-        <Route path='/Aspirants/:id' element={<Aspirant />} />
+        <Route path='/Candidates/:id' element={<Candidate />} />
 
         <Route path='/Blog' element={<Blog />} />
 

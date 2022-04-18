@@ -4,7 +4,7 @@ import {Card, Nav, ProfileCard} from '../components'
 import {RecentPosts} from '../utils/AllData'
 import usePresidentialCandidates from '../hooks/usePresidentialCandidates'
 
-const Aspirants = () => {
+const Candidates = () => {
   const {data} = usePresidentialCandidates()
 
   // const filterTesting = data => {
@@ -14,16 +14,15 @@ const Aspirants = () => {
   return (
     <>
       {/* {data && data.map(N => console.log(N))} */}
-      <section className='relative h-screen px-5 pt-8 overflow-hidden bg-right bg-no-repeat background md:px-32 md:pt-12'>
+      <section className='relative h-screen md:h-[70vh] lg:h-screen px-5 overflow-hidden bg-right bg-no-repeat background lg:px-32 '>
         <Nav />
-        <p className='mt-32 text-6xl font-black text-center md:text-8xl text-dark '>
+        <p className='mt-16 text-6xl font-black text-center md:text-8xl text-dark '>
           2023 Presidential Candidates
         </p>
 
         <p className='my-10 text-lg text-center md:text-xl'>
-          Become Knowledgeable and have power, Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Distinctio perspiciatis sit, nemo odio
-          libero natus quibusdam aliquid magnaeniam, praesentium.
+          Voting choices should be based on capacity and antecedents. It is in
+          pursuance of this cause that we have created this singular platform
         </p>
         <img
           src={Downarrow}
@@ -45,7 +44,7 @@ const Aspirants = () => {
           Recent Posts
         </h3>
 
-        <div className='flex flex-col items-center justify-around mb-5 md:flex-row '>
+        <div className='grid grid-cols-1 mb-5 justify-items-center md:grid-cols-2 lg:grid-cols-3'>
           {RecentPosts.map((recentPost, index) => (
             <Card key={index} {...recentPost} />
           ))}
@@ -55,4 +54,4 @@ const Aspirants = () => {
   )
 }
 
-export default Aspirants
+export default Candidates

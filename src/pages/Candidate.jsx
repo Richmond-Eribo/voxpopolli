@@ -1,11 +1,11 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
-import Nav from './../components/Nav'
-import useSinglePresidentialCandidates from './../hooks/useSinglePresidentialCandidates'
+import Nav from '../components/Nav'
+import useSinglePresidentialCandidates from '../hooks/useSinglePresidentialCandidates'
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer'
 import {BLOCKS} from '@contentful/rich-text-types'
 
-const Aspirant = () => {
+const Candidate = () => {
   const params = useParams()
   const id = params.id
   const {data} = useSinglePresidentialCandidates(id)
@@ -24,7 +24,7 @@ const Aspirant = () => {
     <>
       {/* {data && console.log(data)} */}
       {/* {console.log(id)} */}
-      <section className='relative px-5 pt-8 overflow-hidden bg-right bg-no-repeat background md:px-32 md:pt-12'>
+      <section className='relative px-5 overflow-hidden bg-right bg-no-repeat background lg:px-32 2'>
         <Nav />
         {data && (
           <div className='flex flex-col justify-around mt-10 lg:flex-row'>
@@ -47,4 +47,4 @@ const Aspirant = () => {
   )
 }
 
-export default Aspirant
+export default Candidate
