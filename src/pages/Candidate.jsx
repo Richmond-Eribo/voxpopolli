@@ -26,7 +26,7 @@ const Candidate = () => {
       {/* {console.log(id)} */}
       <section className='relative px-5 overflow-hidden bg-right bg-no-repeat background lg:px-32 2'>
         <Nav />
-        {data && (
+        {data ? (
           <div className='flex flex-col justify-around mt-10 lg:flex-row'>
             <img
               src={'https:' + data.fields.picture.fields.file.url}
@@ -40,6 +40,14 @@ const Candidate = () => {
               {documentToReactComponents(data.fields.bio, options)}
               {documentToReactComponents(data.fields.mustKnow, options)}
             </div>
+          </div>
+        ) : (
+          <div className='h-[60vh]'>
+            {' '}
+            <p className='mt-16 text-3xl font-black text-center md:text-8xl text-dark '>
+              Hey,
+              <br /> getting your data
+            </p>
           </div>
         )}
       </section>

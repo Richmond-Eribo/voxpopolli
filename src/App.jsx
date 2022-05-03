@@ -4,7 +4,7 @@ import Blog from './pages/Blog'
 import Elections from './pages/Elections'
 import Candidates from './pages/Candidates'
 import Candidate from './pages/Candidate'
-import {Footer, Hamburger} from './components'
+import {Hamburger} from './components'
 
 function App() {
   return (

@@ -31,8 +31,13 @@ const HamburgerDrawer = ({children}) => {
           className='dropdown-content menu   p-2 shadow-lg bg-white/40  backdrop-blur-lg rounded-box w-[250px] '
         >
           {Navlinks.map((navLink, index) => (
-            <li key={index}>
-              <Link to={navLink.link} key={index} className='nav'>
+            <li
+              onClick={() => {
+                setIsOpen(false)
+              }}
+              key={index}
+            >
+              <Link to={navLink.link} key={index} className='font-bold nav'>
                 {navLink.name}
               </Link>
             </li>
