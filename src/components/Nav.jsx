@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom'
 import logo from '../assets/logo.png'
 import {Navlinks} from './../utils/AllData'
+import Modal from './Modal'
 
 function Nav() {
   return (
@@ -22,7 +23,7 @@ function Nav() {
         ))}
       </div>
 
-      <p className=' button button-white'>Contribute</p>
+      <Modal />
     </div>
   )
 }

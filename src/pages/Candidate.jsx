@@ -29,9 +29,9 @@ const Candidate = () => {
         {data && (
           <div className='flex flex-col justify-around mt-10 lg:flex-row'>
             <img
-              src='https://api.lorem.space/image/face?w=300&h=200'
+              src={'https:' + data.fields.picture.fields.file.url}
               alt='na wah'
-              className='w-48 mx-auto rounded-md lg:mx-4 h-44 md:w-96 md:h-96'
+              className='w-56 mx-auto rounded-md lg:mx-4 h-44 md:w-96 md:h-64'
             />
             <div>
               <p className='self-end pb-3 text-2xl font-black text-center capitalize lg:text-left md:text-3xl lg:text-4xl text-dark'>
