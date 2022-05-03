@@ -5,7 +5,7 @@ import Modal from './Modal'
 
 function Nav() {
   return (
-    <div className='flex items-center justify-between h-36  '>
+    <div className='flex items-center justify-between h-36 '>
       <Link to='/'>
         <div className='flex items-center'>
           <img src={logo} height={40} width={50} alt='logo' />
@@ -18,7 +18,7 @@ function Nav() {
       <div className='hidden md:flex text '>
         {Navlinks.map(navLink => (
           <Link to={navLink.link} key={navLink.name} className='nav'>
-            <a href='true'>{navLink.name}</a>
+            <p>{navLink.name}</p>
           </Link>
         ))}
       </div>

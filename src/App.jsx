@@ -4,10 +4,12 @@ import Blog from './pages/Blog'
 import Elections from './pages/Elections'
 import Candidates from './pages/Candidates'
 import Candidate from './pages/Candidate'
+import {Footer, Hamburger} from './components'
 
 function App() {
   return (
     <Router>
+      <Hamburger />
       <Routes>
         <Route path='/' element={<Home />} />
 

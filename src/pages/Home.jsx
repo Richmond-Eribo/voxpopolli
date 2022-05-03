@@ -14,8 +14,8 @@ function Home() {
           What We Do
         </h3>
         <div className='flex flex-col items-center justify-around mb-5 lg:flex-row '>
-          {Benefits.map(benefit => (
-            <Card key={benefit.title} {...benefit} />
+          {Benefits.map((benefit, index) => (
+            <Card key={index} {...benefit} />
           ))}
         </div>
       </section>
@@ -48,8 +48,8 @@ function Home() {
         </h3>
 
         <div className='grid grid-cols-1 mb-5 justify-items-center md:grid-cols-2 lg:grid-cols-3'>
-          {RecentPosts.map(recentPost => (
-            <Card key={recentPost.title} {...recentPost} />
+          {RecentPosts.map((recentPost, index) => (
+            <Card key={index} {...recentPost} />
           ))}
         </div>
       </section>

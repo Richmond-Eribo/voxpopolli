@@ -13,8 +13,10 @@ const queryClient = new QueryClient()
 ReactDOM.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
-      <Footer />
+      <div className='relative'>
+        <App />
+        <Footer />
+      </div>
     </QueryClientProvider>
   </React.StrictMode>,
   document.getElementById('root')
