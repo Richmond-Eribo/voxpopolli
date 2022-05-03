@@ -10,10 +10,10 @@ const VerticalCarousel = () => {
       <span className='py-3 text-white -translate-x-5 border-none indicator-item badge bg-muted'>
         scroll
       </span>
-      <div className='md:h-[400px]   md:w-[500px] w-[330px] h-[330px]  carousel carousel-vertical rounded-box'>
+      <div className='md:h-[430px]   md:w-[500px] w-[330px] h-[330px]  carousel carousel-vertical rounded-box'>
         {info.map(i => (
           <div key={i} id='item1' className='w-full h-full carousel-item'>
-            <img alt='img' src={i} height='150%' />
+            <img alt='img' src={i} width='150%' />
           </div>
         ))}
       </div>

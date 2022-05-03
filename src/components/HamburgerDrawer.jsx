@@ -6,7 +6,11 @@ const HamburgerDrawer = ({children}) => {
   const [isOpen, setIsOpen] = useState(false)
   const genericHamburgerLine = `h-1 w-10 my-1 rounded-full bg-dark transition ease transform duration-300`
   return (
-    <div className='fixed inset-x-0 bottom-0 z-50 p-5 dropdown dropdown-top md:hidden transitioning'>
+    <div
+      className={`${
+        isOpen && 'dropdown-open'
+      } fixed inset-x-0 bottom-0 z-50 p-5 dropdown dropdown-top md:hidden transitioning`}
+    >
       <button
         className='flex flex-col items-center justify-center w-16 h-12 rounded-lg shadow-lg bg-primary-light group'
         onClick={() => setIsOpen(!isOpen)}
