@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 function Header() {
   return (
     <div className='flex justify-between '>
-      <section className='relative my-16'>
+      <section className='relative my-6 lg:my-16'>
         <div className='mb-8  text-center lg:text-left lg:w-[537px]'>
           <p className='text-6xl font-black md:text-7xl lg:text-8xl text-dark'>
             Voice of the <span className=''>People</span>

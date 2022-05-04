@@ -10,5 +10,5 @@ const candidateEntryRes = async id => {
 }
 
 export default function useSinglePresidentialCandidates(id) {
-  return useQuery(['candidates', id], () => candidateEntryRes(id))
+  return useQuery(['candidate', id], () => candidateEntryRes(id))
 }

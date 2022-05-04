@@ -5,6 +5,7 @@ import Elections from './pages/Elections'
 import Candidates from './pages/Candidates'
 import Candidate from './pages/Candidate'
 import {Hamburger} from './components'
+import SingleBlog from './pages/SingleBlog'
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
         <Route path='/' element={<Home />} />
 
         <Route path='/Candidates' element={<Candidates />} />
-
         <Route path='/Candidates/:id' element={<Candidate />} />
 
         <Route path='/Blog' element={<Blog />} />
+        <Route path='/Blog/:id' element={<SingleBlog />} />
 
         <Route path='/Elections' element={<Elections />} />
       </Routes>
