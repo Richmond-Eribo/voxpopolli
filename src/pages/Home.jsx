@@ -7,7 +7,7 @@ function Home() {
   const blogs = useBlogPosts(0, 6)
   return (
     <>
-      {blogs.data && console.log(blogs.data)}
+      {/* {blogs.data && console.log(blogs.data)} */}
       <section className='relative overflow-hidden lg:h-double-screen background '>
         <div className='px-5 bg-right bg-no-repeat bg-contain lg:h-large-screen lg:bg-rectangle lg:px-32 '>
           <Nav />

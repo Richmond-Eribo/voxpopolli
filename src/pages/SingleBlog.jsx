@@ -29,7 +29,7 @@ const SingleBlog = () => {
 
   return (
     <>
-      {data && console.log(data.fields)}
+      {/* {data && console.log(data.fields)} */}
       <section className='relative min-h-screen   px-5 overflow-hidden bg-right bg-no-repeat background lg:px-32 '>
         <Nav />
         {data && (
