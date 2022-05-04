@@ -13,7 +13,7 @@ const Candidates = () => {
 
   return (
     <>
-      {/* {data && data.map(N => console.log(N))} */}
+      {data && console.log(data)}
       <section className='relative h-screen md:h-[70vh] lg:h-screen px-5 overflow-hidden bg-right bg-no-repeat background lg:px-32 '>
         <Nav />
         <p className='mt-16 text-6xl font-black text-center md:text-8xl text-dark '>
@@ -34,9 +34,7 @@ const Candidates = () => {
       </section>
 
       <section className='grid grid-cols-1 gap-5 px-5 mb-10 md:gap-10 md:grid-cols-3 md:px-11'>
-        {data?.map(aspirant => (
-          <ProfileCard {...aspirant.fields} />
-        ))}
+        {data && data.map(aspirant => <ProfileCard {...aspirant.fields} />)}
       </section>
 
       <section className='my-10 md:p-10 md:my-16'>
