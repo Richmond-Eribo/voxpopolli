@@ -1,11 +1,12 @@
 import React from 'react'
 import Downarrow from '../assets/downarrow.svg'
 import {Card, Nav, ProfileCard} from '../components'
-import {RecentPosts} from '../utils/AllData'
+import useBlogPosts from './../hooks/useBlogPosts'
 import usePresidentialCandidates from '../hooks/usePresidentialCandidates'
 
 const Candidates = () => {
   const {data} = usePresidentialCandidates()
+  const blogs = useBlogPosts(0, 6)
 
   // const filterTesting = data => {
   //   data.map(D => D.fields)
@@ -42,10 +43,11 @@ const Candidates = () => {
           Recent Posts
         </h3>
 
-        <div className='grid grid-cols-1 mb-5 justify-items-center md:grid-cols-2 lg:grid-cols-3'>
-          {RecentPosts.map((recentPost, index) => (
-            <Card key={index} {...recentPost} />
-          ))}
+        <div className='grid grid-cols-1 gap-3 mb-5 justify-items-center md:grid-cols-2 lg:grid-cols-3'>
+          {blogs.data &&
+            blogs.data.map((blog, index) => (
+              <Card key={index} {...blog.fields} />
+            ))}
         </div>
       </section>
     </>

@@ -1,5 +1,5 @@
 import {Header, Nav, VerticalCarousel, Card} from '../components'
-import {Benefits, RecentPosts} from '../utils/AllData'
+import {Benefits} from '../utils/AllData'
 import useBlogPosts from './../hooks/useBlogPosts'
 import FeatureCard from './../components/FeatureCard'
 
