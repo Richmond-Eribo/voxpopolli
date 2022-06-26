@@ -13,11 +13,18 @@ function Header() {
           <p className='text-6xl font-black md:text-7xl lg:text-8xl text-dark'>
             Voice of the <span className=''>People</span>
           </p>
-          <p className='my-5 mb-12 lg:text-lg'>
-            Presenting the public with hard facts about presidential aspirants,
+          <p className='my-5 mb-12 lg:text-base text-sm'>
+            {/* Presenting the public with hard facts about presidential aspirants,
             trending information in the build up to the election, and analysis
             of each candidate based on their capacity to deliver as the number
-            one citizen of the world’s biggest black nation,
+            one citizen of the world’s biggest black nation, */}
+            Positively impacting voting decisions of the people by presenting
+            the public with hard facts about presidential aspirants, trending
+            information in the build up to the election, and analysis of each
+            candidate based on their capacity to deliver as the number one
+            citizen of the world’s biggest black nation. Our goal is to create a
+            single source platform for information relating to the forthcoming
+            2023 presidential election.
           </p>
         </div>
 
