@@ -15,8 +15,7 @@ function App() {
         <meta charSet='utf-8' />
         <title>Voxpopuli Nigeria</title>
         <meta
-          og:name='description'
-          k
+          name='description'
           content='Positively impacting voting decisions of the people by presenting
       the public with hard facts about presidential aspirants'
         />
