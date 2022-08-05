@@ -8,10 +8,23 @@ function Nav() {
     <div className='flex items-center justify-between h-36 '>
       <Link to='/'>
         <div className='flex items-center'>
-          <img src={logo} height={40} width={50} alt='logo' />
-          <p className='hidden mx-1 text-lg font-bold text md:block text-dark '>
+          <img
+            src={logo}
+            height={301 / 5}
+            width={1201 / 5}
+            alt='logo'
+            className='hidden lg:block'
+          />
+          <img
+            src={logo}
+            height={301 / 7}
+            width={1201 / 7}
+            alt='logo'
+            className=' lg:hidden'
+          />
+          {/* <p className='hidden mx-1 text-lg font-bold text md:block text-dark '>
             Voxpopuli
-          </p>
+          </p> */}
         </div>
       </Link>
 
